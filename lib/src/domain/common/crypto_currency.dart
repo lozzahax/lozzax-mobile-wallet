@@ -1,4 +1,4 @@
-import 'package:oxen_wallet/src/domain/common/enumerable_item.dart';
+import 'package:lozzax_wallet/src/domain/common/enumerable_item.dart';
 import 'package:hive/hive.dart';
 
 part 'crypto_currency.g.dart';
@@ -9,7 +9,7 @@ class CryptoCurrency extends EnumerableItem<int> with Serializable<int> {
       : super(title: title, raw: raw);
 
   static const all = [
-    CryptoCurrency.oxen,
+    CryptoCurrency.lozzax,
     CryptoCurrency.ada,
     CryptoCurrency.bch,
     CryptoCurrency.bnb,
@@ -26,7 +26,7 @@ class CryptoCurrency extends EnumerableItem<int> with Serializable<int> {
     CryptoCurrency.xmr
   ];
 
-  static const oxen = CryptoCurrency(title: 'OXEN', raw: 0);
+  static const lozzax = CryptoCurrency(title: 'LOZAXX', raw: 0);
   static const ada = CryptoCurrency(title: 'ADA', raw: 1);
   static const bch = CryptoCurrency(title: 'BCH', raw: 2);
   static const bnb = CryptoCurrency(title: 'BNB', raw: 3);
@@ -46,7 +46,7 @@ class CryptoCurrency extends EnumerableItem<int> with Serializable<int> {
   static CryptoCurrency deserialize({int raw}) {
     switch (raw) {
       case 0:
-        return CryptoCurrency.oxen;
+        return CryptoCurrency.lozzax;
       case 1:
         return CryptoCurrency.ada;
       case 2:
@@ -82,8 +82,8 @@ class CryptoCurrency extends EnumerableItem<int> with Serializable<int> {
 
   static CryptoCurrency fromString(String raw) {
     switch (raw.toLowerCase()) {
-      case 'oxen':
-        return CryptoCurrency.oxen;
+      case 'lozzax':
+        return CryptoCurrency.lozzax;
       case 'xmr':
         return CryptoCurrency.xmr;
       case 'ada':

@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/routes.dart';
-import 'package:oxen_wallet/src/screens/base_page.dart';
-import 'package:oxen_wallet/src/screens/auth/auth_page.dart';
-import 'package:oxen_wallet/src/widgets/nav/nav_list_arrow.dart';
-import 'package:oxen_wallet/src/widgets/nav/nav_list_header.dart';
+import 'package:lozzax_wallet/generated/l10n.dart';
+import 'package:lozzax_wallet/routes.dart';
+import 'package:lozzax_wallet/src/screens/base_page.dart';
+import 'package:lozzax_wallet/src/screens/auth/auth_page.dart';
+import 'package:lozzax_wallet/src/widgets/nav/nav_list_arrow.dart';
+import 'package:lozzax_wallet/src/widgets/nav/nav_list_header.dart';
 
 class ProfilePage extends BasePage {
   final _bodyKey = GlobalKey();

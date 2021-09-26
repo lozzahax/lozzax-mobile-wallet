@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:oxen_wallet/src/domain/common/crypto_currency.dart';
-import 'package:oxen_wallet/src/domain/common/fiat_currency.dart';
+import 'package:lozzax_wallet/src/domain/common/crypto_currency.dart';
+import 'package:lozzax_wallet/src/domain/common/fiat_currency.dart';
 import 'package:http/http.dart';
 
 const fiatApiAuthority = 'explorer.lozzax.xyz';

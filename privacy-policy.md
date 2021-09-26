@@ -51,4 +51,4 @@ We take reasonable measures to help protect information about you from loss, the
 unauthorized access, disclosure, alteration and destruction.
 
 ### 6. Contact Us
-If you have any questions about this Privacy Policy, please contact us at team@oxen.io
+If you have any questions about this Privacy Policy, please contact us at team@lozzax.io

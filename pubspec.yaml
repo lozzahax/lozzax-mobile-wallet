@@ -46,7 +46,7 @@ dependencies:
   date_range_picker: ^1.0.7
   dio: ^4.0.0
   lozzax_coin:
-    path: ./oxen_coin
+    path: ./lozzax_coin
   hive: ^1.4.4+1
   hive_flutter: ^0.3.1
   local_auth: ^1.1.0

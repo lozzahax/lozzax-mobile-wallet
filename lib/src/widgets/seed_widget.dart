@@ -1,21 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/src/wallet/mnemotic_item.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/chinese_simplified.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/dutch.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/english.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/english_old.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/french.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/german.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/italian.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/japanese.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/portuguese.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/russian.dart';
-import 'package:oxen_wallet/src/wallet/oxen/mnemonics/spanish.dart';
-import 'package:oxen_wallet/src/widgets/primary_button.dart';
+import 'package:lozzax_wallet/generated/l10n.dart';
+import 'package:lozzax_wallet/palette.dart';
+import 'package:lozzax_wallet/src/wallet/mnemotic_item.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/chinese_simplified.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/dutch.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/english.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/english_old.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/french.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/german.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/italian.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/japanese.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/portuguese.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/russian.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/mnemonics/spanish.dart';
+import 'package:lozzax_wallet/src/widgets/primary_button.dart';
 
 final List<String> _englishWords =
     EnglishMnemonics.words + EnglishOldMnemonics.words;
@@ -260,7 +260,7 @@ class SeedWidgetState extends State<SeedWidget> {
                   child: Container(
                       decoration: BoxDecoration(
                           color:
-                              isValid ? Colors.transparent : OxenPalette.red),
+                              isValid ? Colors.transparent : LozzaxPalette.red),
                       margin: EdgeInsets.only(right: 7, bottom: 8),
                       child: Text(
                         item.toString(),
@@ -330,7 +330,7 @@ class SeedWidgetState extends State<SeedWidget> {
                           errorText: _errorMessage,
                           focusedBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                  color: OxenPalette.teal, width: 2.0)),
+                                  color: LozzaxPalette.teal, width: 2.0)),
                           enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                   color: Theme.of(context).focusColor,

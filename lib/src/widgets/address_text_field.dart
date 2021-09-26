@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/routes.dart';
-import 'package:oxen_wallet/src/domain/common/contact.dart';
-import 'package:oxen_wallet/src/domain/common/qr_scanner.dart';
-import 'package:oxen_wallet/src/wallet/oxen/subaddress.dart';
-import 'package:oxen_wallet/src/widgets/oxen_text_field.dart';
+import 'package:lozzax_wallet/generated/l10n.dart';
+import 'package:lozzax_wallet/palette.dart';
+import 'package:lozzax_wallet/routes.dart';
+import 'package:lozzax_wallet/src/domain/common/contact.dart';
+import 'package:lozzax_wallet/src/domain/common/qr_scanner.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/subaddress.dart';
+import 'package:lozzax_wallet/src/widgets/lozzax_text_field.dart';
 
 enum AddressTextFieldOption { qrCode, addressBook, subaddressList }
 
@@ -37,7 +37,7 @@ class AddressTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OxenTextField(
+    return LozzaxTextField(
       enabled: isActive,
       controller: controller,
       focusNode: focusNode,

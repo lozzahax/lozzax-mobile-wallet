@@ -1,6 +1,6 @@
 import 'package:rxdart/rxdart.dart';
-import 'package:oxen_coin/account_list.dart' as account_list;
-import 'package:oxen_wallet/src/wallet/oxen/account.dart';
+import 'package:lozzax_coin/account_list.dart' as account_list;
+import 'package:lozzax_wallet/src/wallet/lozzax/account.dart';
 
 class AccountList {
   AccountList() {

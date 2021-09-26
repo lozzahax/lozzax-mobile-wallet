@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface OxenCoinPlugin : NSObject<FlutterPlugin>
+@interface LozzaxCoinPlugin : NSObject<FlutterPlugin>
 @end

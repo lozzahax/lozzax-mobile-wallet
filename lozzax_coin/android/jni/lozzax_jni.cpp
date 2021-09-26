@@ -1,6 +1,6 @@
 #include <string.h>
 #include <jni.h>
-#include "../../ios/Classes/oxen_api.cpp"
+#include "../../ios/Classes/lozzax_api.cpp"
 #include <stdbool.h>
 
 #ifdef __cplusplus
@@ -35,10 +35,10 @@ void detachJVM(JNIEnv *jenv, int envStat) {
     }
 }
 
-struct OxenWalletListenerWrapper: Oxen::WalletListener {
+struct LozzaxWalletListenerWrapper: Lozzax::WalletListener {
     jobject listener;
 
-    OxenWalletListenerWrapper(JNIEnv *env, jobject aListener) {
+    LozzaxWalletListenerWrapper(JNIEnv *env, jobject aListener) {
         listener = env->NewGlobalRef(aListener);
     }
 
@@ -110,7 +110,7 @@ struct OxenWalletListenerWrapper: Oxen::WalletListener {
     }
 };
 
-static OxenWalletListenerWrapper *listenerWrapper = NULL;
+static LozzaxWalletListenerWrapper *listenerWrapper = NULL;
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *_jvm, void *reserved) {
     jvm = _jvm;
@@ -120,14 +120,14 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *_jvm, void *reserved) {
         return -1;
     }
 
-    listener_class = static_cast<jclass>(jenv->NewGlobalRef(jenv->FindClass("io/lozzax/coin/OxenWalletSyncStatusListener")));
+    listener_class = static_cast<jclass>(jenv->NewGlobalRef(jenv->FindClass("io/lozzax/coin/LozzaxWalletSyncStatusListener")));
 
     return JNI_VERSION_1_6;
 }
 
 JNIEXPORT void JNICALL
-Java_io_oxen_coin_OxenApi_setupListenerJNI(JNIEnv *env, jobject inst, jobject listener) {
-    listenerWrapper = new OxenWalletListenerWrapper(env, listener);
+Java_io_lozzax_coin_LozzaxApi_setupListenerJNI(JNIEnv *env, jobject inst, jobject listener) {
+    listenerWrapper = new LozzaxWalletListenerWrapper(env, listener);
     get_current_wallet()->setListener(listenerWrapper);
 }
 

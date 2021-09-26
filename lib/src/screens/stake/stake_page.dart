@@ -2,22 +2,22 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:oxen_coin/oxen_coin_structs.dart';
-import 'package:oxen_coin/stake.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/routes.dart';
-import 'package:oxen_wallet/src/screens/auth/auth_page.dart';
-import 'package:oxen_wallet/src/screens/base_page.dart';
-import 'package:oxen_wallet/src/wallet/crypto_amount_format.dart';
-import 'package:oxen_wallet/src/wallet/oxen/oxen_amount_format.dart';
-import 'package:oxen_wallet/src/widgets/nav/nav_list_header.dart';
-import 'package:oxen_wallet/src/widgets/nav/nav_list_trailing.dart';
-import 'package:oxen_wallet/src/widgets/oxen_dialog.dart';
+import 'package:lozzax_coin/lozzax_coin_structs.dart';
+import 'package:lozzax_coin/stake.dart';
+import 'package:lozzax_wallet/generated/l10n.dart';
+import 'package:lozzax_wallet/palette.dart';
+import 'package:lozzax_wallet/routes.dart';
+import 'package:lozzax_wallet/src/screens/auth/auth_page.dart';
+import 'package:lozzax_wallet/src/screens/base_page.dart';
+import 'package:lozzax_wallet/src/wallet/crypto_amount_format.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/lozzax_amount_format.dart';
+import 'package:lozzax_wallet/src/widgets/nav/nav_list_header.dart';
+import 'package:lozzax_wallet/src/widgets/nav/nav_list_trailing.dart';
+import 'package:lozzax_wallet/src/widgets/lozzax_dialog.dart';
 
 extension StakeParsing on StakeRow {
   double get ownedPercentage {
-    final percentage = oxenAmountToDouble(amount) / 25000;
+    final percentage = lozzaxAmountToDouble(amount) / 25000;
     if (percentage > 1) return 1;
     return percentage;
   }
@@ -57,12 +57,12 @@ class StakePageBodyState extends State<StakePageBody> {
               );
             }
             final allStakes = snapshot.data;
-            final stakeColor = allStakes.isEmpty ? OxenPalette.lightRed : OxenPalette.lime;
+            final stakeColor = allStakes.isEmpty ? LozzaxPalette.lightRed : LozzaxPalette.lime;
             var totalAmountStaked = 0;
             for (final stake in allStakes) {
               totalAmountStaked += stake.amount;
             }
-            final stakePercentage = allStakes.isEmpty ? 1.0 : min(oxenAmountToDouble(totalAmountStaked) / 25000, 1.0);
+            final stakePercentage = allStakes.isEmpty ? 1.0 : min(lozzaxAmountToDouble(totalAmountStaked) / 25000, 1.0);
             return ListView(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -84,7 +84,7 @@ class StakePageBodyState extends State<StakePageBody> {
                       ),
                       Center(
                           child: Text(allStakes.isNotEmpty
-                              ? oxenAmountToString(totalAmountStaked,
+                              ? lozzaxAmountToString(totalAmountStaked,
                               detail: AmountDetail.none)
                               : S.current.nothing_staked)),
                     ],
@@ -141,7 +141,7 @@ class StakePageBodyState extends State<StakePageBody> {
                                   });
 
                               if (isAuthenticated) {
-                                await showConfirmOxenDialog(
+                                await showConfirmLozzaxDialog(
                                     context,
                                     S.of(context).title_confirm_unlock_stake,
                                     S.of(context).body_confirm_unlock_stake(
@@ -168,7 +168,7 @@ class StakePageBodyState extends State<StakePageBody> {
                             background: Container(
                                 padding: EdgeInsets.only(right: 10.0),
                                 alignment: AlignmentDirectional.centerEnd,
-                                color: OxenPalette.red,
+                                color: LozzaxPalette.red,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[

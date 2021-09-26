@@ -1,12 +1,12 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:oxen_wallet/src/wallet/wallet.dart';
-import 'package:oxen_wallet/src/wallet/oxen/oxen_wallet.dart';
-import 'package:oxen_wallet/src/wallet/oxen/subaddress.dart';
-import 'package:oxen_wallet/src/wallet/oxen/subaddress_list.dart';
-import 'package:oxen_wallet/src/domain/services/wallet_service.dart';
-import 'package:oxen_wallet/src/wallet/oxen/account.dart';
+import 'package:lozzax_wallet/src/wallet/wallet.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/lozzax_wallet.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/subaddress.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/subaddress_list.dart';
+import 'package:lozzax_wallet/src/domain/services/wallet_service.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/account.dart';
 
 part 'subaddress_list_store.g.dart';
 
@@ -57,7 +57,7 @@ abstract class SubaddressListStoreBase with Store {
       await _onSubaddressesChangeSubscription.cancel();
     }
 
-    if (wallet is OxenWallet) {
+    if (wallet is LozzaxWallet) {
       _account = wallet.account;
       _subaddressList = wallet.getSubaddress();
       _onSubaddressesChangeSubscription = _subaddressList.subaddresses
