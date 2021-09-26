@@ -1,12 +1,12 @@
 -
-  uri: public.loki.foundation:22023
+  uri: public.lozzax.xyz:22123
   is_default: true
 -
-  uri: nodes.hashvault.pro:22023
+  uri: nodes.lozzax.xyz:22123
   is_default: false
 -
-  uri: node.loki-pool.com:18081
+  uri: node.lozzax.xyz:18081
   is_default: false
 -
-  uri: freyr.imaginary.stream:22023
+  uri: freyr.lozzax.xyz:22023
   is_default: false

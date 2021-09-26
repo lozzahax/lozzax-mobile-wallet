@@ -1,6 +1,6 @@
-# Oxen Wallet
+# Lozzax Wallet
 
-The Oxen Wallet is a Fork of the Cake Wallet.
+The Lozzax Wallet was originally Forked from Oxen Wallet.
 
 ## Build
 
@@ -14,7 +14,7 @@ The Oxen Wallet is a Fork of the Cake Wallet.
     flutter pub run build_runner build
     ```
 
-3. To download the latest build of the Oxen Dependencies run 
+3. To download the latest build of the Lozzax Dependencies run 
    ```
    ./tool/download-android-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-android-deps-LATEST.tar.xz
    ./tool/download-ios-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-ios-deps-LATEST.tar.xz
@@ -44,4 +44,6 @@ The Oxen Wallet is a Fork of the Cake Wallet.
 
 ## Copyright
 Copyright (c) 2020 Konstantin Ullrich.\
-Copyright (c) 2020 Cake Technologies LLC.
+Copyright (c) 2020 Cake Technologies LLC.\
+Copyright (c) 2022 Oxen.
+

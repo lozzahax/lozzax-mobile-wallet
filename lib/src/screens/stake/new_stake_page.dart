@@ -173,7 +173,7 @@ class NewStakeFormState extends State<NewStakeForm> {
                             value, balanceStore.unlockedBalance);
                         return sendStore.errorMessage;
                       },
-                      hintText: '0.0000 OXEN',
+                      hintText: '0.0000 LZX',
                       keyboardType: TextInputType.numberWithOptions(
                           signed: false, decimal: true),
                       inputFormatters: [
@@ -212,7 +212,7 @@ class NewStakeFormState extends State<NewStakeForm> {
                                   .backgroundColor,
                             )),
                         Text(
-                            '${calculateEstimatedFee(priority: OxenTransactionPriority.slow)} OXEN',
+                            '${calculateEstimatedFee(priority: OxenTransactionPriority.slow)} LZX',
                             style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w500,

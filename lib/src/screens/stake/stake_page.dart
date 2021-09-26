@@ -17,7 +17,7 @@ import 'package:oxen_wallet/src/widgets/oxen_dialog.dart';
 
 extension StakeParsing on StakeRow {
   double get ownedPercentage {
-    final percentage = oxenAmountToDouble(amount) / 15000;
+    final percentage = oxenAmountToDouble(amount) / 25000;
     if (percentage > 1) return 1;
     return percentage;
   }
@@ -62,7 +62,7 @@ class StakePageBodyState extends State<StakePageBody> {
             for (final stake in allStakes) {
               totalAmountStaked += stake.amount;
             }
-            final stakePercentage = allStakes.isEmpty ? 1.0 : min(oxenAmountToDouble(totalAmountStaked) / 15000, 1.0);
+            final stakePercentage = allStakes.isEmpty ? 1.0 : min(oxenAmountToDouble(totalAmountStaked) / 25000, 1.0);
             return ListView(
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),

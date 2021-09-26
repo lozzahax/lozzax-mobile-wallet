@@ -48,15 +48,15 @@ class SettingsFormState extends State<SettingsForm> {
   final _telegramImage = Image.asset('assets/images/Telegram.png');
   final _twitterImage = Image.asset('assets/images/Twitter.png');
 
-  final _emailText = 'team@oxen.io';
-  final _telegramText = 't.me/Oxen_Community';
-  final _twitterText = 'twitter.com/Oxen_io';
-  final _githubText = 'github.com/oxen-io';
+  final _emailText = 'team@lozzax.xyz';
+  final _telegramText = 't.me/LozzaxCommunity';
+  final _twitterText = 'twitter.com/LozzaxCommunity';
+  final _githubText = 'github.com/lozzax';
 
-  final _emailUrl = 'mailto:team@oxen.io';
-  final _telegramUrl = 'https:t.me/Oxen_Community';
-  final _twitterUrl = 'https:twitter.com/Oxen_io';
-  final _githubUrl = 'https:github.com/oxen-io';
+  final _emailUrl = 'mailto:team@lozzax.xyz';
+  final _telegramUrl = 'https:t.me/LozzaxCommunity';
+  final _twitterUrl = 'https:twitter.com/LozzaxCommunity';
+  final _githubUrl = 'https:github.com/lozzax';
 
   final _items = <SettingsItem>[];
 

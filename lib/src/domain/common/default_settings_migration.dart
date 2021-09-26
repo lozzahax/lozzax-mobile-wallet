@@ -62,11 +62,11 @@ Future defaultSettingsMigration(
 
 Future<void> replaceNodesMigration({@required Box<Node> nodes}) async {
   final replaceNodes = <String, Node>{
-    'public.loki.foundation:22023':
-        Node(uri: 'public.loki.foundation:22023'),
-    'nodes.hashvault.pro:22023':
-        Node(uri: 'nodes.hashvault.pro:22023'),
-    'node.loki-pool.com:18081': Node(uri: 'node.loki-pool.com:18081')
+    'public.lozzax.xyz:22123':
+        Node(uri: 'public.lozzax.xyz:22123'),
+    'nodes.lozzax.xyz:22123':
+        Node(uri: 'nodes.lozzax.xyz:22123'),
+    'node.lozzax.xyz:18081': Node(uri: 'node.lozzax.xyz:18081')
   };
 
   nodes.values.forEach((Node node) async {
@@ -88,9 +88,9 @@ Future<void> changeCurrentNodeToDefault(
   var nodeUri = '';
 
   if (timeZone >= 1) { // Eurasia
-    nodeUri = 'public.loki.foundation:22023';
+    nodeUri = 'public.lozzax.xyz:22123';
   } else if (timeZone <= -4) { // America
-    nodeUri = 'freyr.imaginary.stream:22023';
+    nodeUri = 'freyr.lozzax.xyz:22123';
   }
 
   final node = nodes.values.firstWhere((Node node) => node.uri == nodeUri) ??
@@ -104,9 +104,9 @@ Future<void> replaceDefaultNode(
     {@required SharedPreferences sharedPreferences,
     @required Box<Node> nodes}) async {
   const nodesForReplace = <String>[
-    'public.loki.foundation:22023',
-    'nodes.hashvault.pro:22023',
-    'node.loki-pool.com:18081'
+    'public.lozzax.xyz:22123',
+    'nodes.lozzax.xyz:22123',
+    'node.lozzax.xyz:18081'
   ];
   final currentNodeId = sharedPreferences.getInt('current_node_id');
   final currentNode =
