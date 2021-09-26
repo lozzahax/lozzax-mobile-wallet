@@ -1,6 +1,6 @@
 # Lozzax Wallet
 
-The Lozzax Wallet was originally Forked from Oxen Wallet.
+The Lozzax Wallet was originally Forked from Lozzax Wallet.
 
 ## Build
 
@@ -16,11 +16,11 @@ The Lozzax Wallet was originally Forked from Oxen Wallet.
 
 3. To download the latest build of the Lozzax Dependencies run 
    ```
-   ./tool/download-android-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-android-deps-LATEST.tar.xz
-   ./tool/download-ios-deps.sh https://oxen.rocks/oxen-io/oxen-core/oxen-stable-ios-deps-LATEST.tar.xz
+   ./tool/download-android-deps.sh https://lozzax.rocks/lozzax-io/lozzax-core/lozzax-stable-android-deps-LATEST.tar.xz
+   ./tool/download-ios-deps.sh https://lozzax.rocks/lozzax-io/lozzax-core/lozzax-stable-ios-deps-LATEST.tar.xz
    ```
-   Or build the Oxen Dependencies and copy the Android deps into `oxen_coin/ios/External/android/oxen`
-   and the ios into `oxen_coin/ios/External/ios/oxen`
+   Or build the Lozzax Dependencies and copy the Android deps into `lozzax_coin/ios/External/android/lozzax`
+   and the ios into `lozzax_coin/ios/External/ios/lozzax`
 
 4. Generate Launcher Icons
     ```shell script
@@ -45,5 +45,5 @@ The Lozzax Wallet was originally Forked from Oxen Wallet.
 ## Copyright
 Copyright (c) 2020 Konstantin Ullrich.\
 Copyright (c) 2020 Cake Technologies LLC.\
-Copyright (c) 2022 Oxen.
+Copyright (c) 2022 Oxen Project.
 

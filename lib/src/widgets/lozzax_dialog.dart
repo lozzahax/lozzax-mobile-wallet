@@ -1,42 +1,42 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:oxen_wallet/generated/l10n.dart';
-import 'package:oxen_wallet/palette.dart';
-import 'package:oxen_wallet/src/widgets/primary_button.dart';
-import 'package:oxen_wallet/src/widgets/slide_to_act.dart';
+import 'package:lozzax_wallet/generated/l10n.dart';
+import 'package:lozzax_wallet/palette.dart';
+import 'package:lozzax_wallet/src/widgets/primary_button.dart';
+import 'package:lozzax_wallet/src/widgets/slide_to_act.dart';
 
-Future showOxenDialog(BuildContext context, Widget child,
+Future showLozzaxDialog(BuildContext context, Widget child,
     {void Function(BuildContext context) onDismiss}) {
   return showDialog<void>(
-      builder: (_) => OxenDialog(body: child, onDismiss: onDismiss),
+      builder: (_) => LozzaxDialog(body: child, onDismiss: onDismiss),
       context: context);
 }
 
-Future showSimpleOxenDialog(BuildContext context, String title, String body,
+Future showSimpleLozzaxDialog(BuildContext context, String title, String body,
     {String buttonText,
     void Function(BuildContext context) onPressed,
     void Function(BuildContext context) onDismiss}) {
   return showDialog<void>(
-      builder: (_) => SimpleOxenDialog(title, body,
+      builder: (_) => SimpleLozzaxDialog(title, body,
           buttonText: buttonText, onDismiss: onDismiss, onPressed: onPressed),
       context: context);
 }
 
-Future showConfirmOxenDialog(BuildContext context, String title, String body,
+Future showConfirmLozzaxDialog(BuildContext context, String title, String body,
     {void Function(BuildContext context) onConfirm,
     Future Function(BuildContext context) onFutureConfirm,
     void Function(BuildContext context) onDismiss}) {
   return showDialog<void>(
-      builder: (_) => ConfirmOxenDialog(title, body,
+      builder: (_) => ConfirmLozzaxDialog(title, body,
           onDismiss: onDismiss,
           onConfirm: onConfirm,
           onFutureConfirm: onFutureConfirm),
       context: context);
 }
 
-class OxenDialog extends StatelessWidget {
-  OxenDialog({this.body, this.onDismiss});
+class LozzaxDialog extends StatelessWidget {
+  LozzaxDialog({this.body, this.onDismiss});
 
   final void Function(BuildContext context) onDismiss;
   final Widget body;
@@ -79,8 +79,8 @@ class OxenDialog extends StatelessWidget {
   }
 }
 
-class SimpleOxenDialog extends StatelessWidget {
-  SimpleOxenDialog(this.title, this.body,
+class SimpleLozzaxDialog extends StatelessWidget {
+  SimpleLozzaxDialog(this.title, this.body,
       {this.buttonText, this.onPressed, this.onDismiss});
 
   final String title;
@@ -91,7 +91,7 @@ class SimpleOxenDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OxenDialog(
+    return LozzaxDialog(
         onDismiss: onDismiss,
         body: Container(
           padding: EdgeInsets.all(30),
@@ -133,8 +133,8 @@ class SimpleOxenDialog extends StatelessWidget {
   }
 }
 
-class ConfirmOxenDialog extends StatelessWidget {
-  ConfirmOxenDialog(this.title, this.body,
+class ConfirmLozzaxDialog extends StatelessWidget {
+  ConfirmLozzaxDialog(this.title, this.body,
       {this.onFutureConfirm, this.onConfirm, this.onDismiss});
 
   final String title;
@@ -145,7 +145,7 @@ class ConfirmOxenDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OxenDialog(
+    return LozzaxDialog(
         onDismiss: onDismiss,
         body: Container(
           padding: EdgeInsets.all(30),
@@ -175,7 +175,7 @@ class ConfirmOxenDialog extends StatelessWidget {
               SlideToAct(
                 text: S.of(context).ok,
                 outerColor: Theme.of(context).primaryTextTheme.subtitle2.color,
-                innerColor: OxenPalette.teal,
+                innerColor: LozzaxPalette.teal,
                 onFutureSubmit: onFutureConfirm != null
                     ? () async => await onFutureConfirm(context)
                     : null,

@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftLozzaxCoinPlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "oxen_coin", binaryMessenger: registrar.messenger())
+        let channel = FlutterMethodChannel(name: "lozzax_coin", binaryMessenger: registrar.messenger())
         let instance = SwiftLozzaxCoinPlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

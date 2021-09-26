@@ -1,10 +1,10 @@
-import 'package:oxen_wallet/src/wallet/oxen/oxen_amount_format.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/lozzax_amount_format.dart';
 
 String calculateFiatAmount({double price, int cryptoAmount}) {
   if (price == null || cryptoAmount == null) {
     return '0.00';
   }
-  final result = price * oxenAmountToDouble(cryptoAmount);
+  final result = price * lozzaxAmountToDouble(cryptoAmount);
 
   if (result == 0.0) {
     return '0.00';

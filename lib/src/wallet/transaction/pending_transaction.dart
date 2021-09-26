@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:oxen_coin/transaction_history.dart' as transaction_history;
-import 'package:oxen_coin/oxen_coin_structs.dart';
-import 'package:oxen_wallet/src/wallet/oxen/oxen_amount_format.dart';
+import 'package:lozzax_coin/transaction_history.dart' as transaction_history;
+import 'package:lozzax_coin/lozzax_coin_structs.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/lozzax_amount_format.dart';
 
 class PendingTransaction {
   PendingTransaction(
@@ -9,8 +9,8 @@ class PendingTransaction {
 
   PendingTransaction.fromTransactionDescription(
       PendingTransactionDescription transactionDescription)
-      : amount = oxenAmountToString(transactionDescription.amount),
-        fee = oxenAmountToString(transactionDescription.fee),
+      : amount = lozzaxAmountToString(transactionDescription.amount),
+        fee = lozzaxAmountToString(transactionDescription.fee),
         hash = transactionDescription.hash,
         _pointerAddress = transactionDescription.pointerAddress;
 

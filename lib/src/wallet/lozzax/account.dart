@@ -1,4 +1,4 @@
-import 'package:oxen_coin/oxen_coin_structs.dart';
+import 'package:lozzax_coin/lozzax_coin_structs.dart';
 
 class Account {
   Account({this.id, this.label});

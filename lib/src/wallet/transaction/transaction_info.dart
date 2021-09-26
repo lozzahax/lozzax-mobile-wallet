@@ -1,8 +1,8 @@
-import 'package:oxen_wallet/src/wallet/oxen/oxen_amount_format.dart';
-import 'package:oxen_coin/oxen_coin_structs.dart';
-import 'package:oxen_wallet/src/util/parseBoolFromString.dart';
-import 'package:oxen_wallet/src/wallet/transaction/transaction_direction.dart';
-import 'package:oxen_wallet/src/domain/common/format_amount.dart';
+import 'package:lozzax_wallet/src/wallet/lozzax/lozzax_amount_format.dart';
+import 'package:lozzax_coin/lozzax_coin_structs.dart';
+import 'package:lozzax_wallet/src/util/parseBoolFromString.dart';
+import 'package:lozzax_wallet/src/wallet/transaction/transaction_direction.dart';
+import 'package:lozzax_wallet/src/domain/common/format_amount.dart';
 
 class TransactionInfo {
   TransactionInfo(this.id, this.height, this.direction, this.date,
@@ -41,7 +41,7 @@ class TransactionInfo {
 
   String _fiatAmount;
 
-  String amountFormatted() => '${oxenAmountToString(amount)} OXEN';
+  String amountFormatted() => '${lozzaxAmountToString(amount)} LOZAXX';
 
   String fiatAmount() => _fiatAmount ?? '';
 

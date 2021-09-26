@@ -14,7 +14,7 @@ A new flutter plugin project.
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
-  s.exclude_files = ['Classes/lozzax_api.cpp', 'Classes/OxenWalletListenerWrapper.mm']
+  s.exclude_files = ['Classes/lozzax_api.cpp', 'Classes/LozzaxWalletListenerWrapper.mm']
   s.public_header_files = 'Classes/**/*.h, Classes/*.h, External/ios/lozzax/include/*.h'
   s.dependency 'Flutter'
   s.platform = :ios, '9.0'
@@ -26,7 +26,7 @@ A new flutter plugin project.
       'CLANG_CXX_LIBRARY' => 'libc++'
       }
 
-  s.subspec 'Oxen' do |lozzax|
+  s.subspec 'Lozzax' do |lozzax|
     lozzax.preserve_paths = 'External/ios/lozzax/include/*.h'
     lozzax.vendored_libraries = 'External/ios/lozzax/lib/*.a'
     lozzax.libraries = 'wallet_api'

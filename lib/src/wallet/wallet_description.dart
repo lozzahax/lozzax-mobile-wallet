@@ -1,4 +1,4 @@
-import 'package:oxen_wallet/src/wallet/wallet_type.dart';
+import 'package:lozzax_wallet/src/wallet/wallet_type.dart';
 
 class WalletDescription {
   WalletDescription({this.name, this.type});

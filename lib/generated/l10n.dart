@@ -35,20 +35,20 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `WELCOME\nTO OXEN WALLET`
+  /// `WELCOME\nTO LOZAXX WALLET`
   String get welcome {
     return Intl.message(
-      'WELCOME\nTO OXEN WALLET',
+      'WELCOME\nTO LOZAXX WALLET',
       name: 'welcome',
       desc: '',
       args: [],
     );
   }
 
-  /// `Awesome wallet\nfor Oxen`
+  /// `Awesome wallet\nfor Lozzax`
   String get first_wallet_text {
     return Intl.message(
-      'Awesome wallet\nfor Oxen',
+      'Awesome wallet\nfor Lozzax',
       name: 'first_wallet_text',
       desc: '',
       args: [],
@@ -265,31 +265,31 @@ class S {
     );
   }
 
-  /// `OXEN Hidden`
-  String get oxen_hidden {
+  /// `LOZAXX Hidden`
+  String get lozzax_hidden {
     return Intl.message(
-      'OXEN Hidden',
-      name: 'oxen_hidden',
+      'LOZAXX Hidden',
+      name: 'lozzax_hidden',
       desc: '',
       args: [],
     );
   }
 
-  /// `OXEN Available Balance`
-  String get oxen_available_balance {
+  /// `LOZAXX Available Balance`
+  String get lozzax_available_balance {
     return Intl.message(
-      'OXEN Available Balance',
-      name: 'oxen_available_balance',
+      'LOZAXX Available Balance',
+      name: 'lozzax_available_balance',
       desc: '',
       args: [],
     );
   }
 
-  /// `OXEN Full Balance`
-  String get oxen_full_balance {
+  /// `LOZAXX Full Balance`
+  String get lozzax_full_balance {
     return Intl.message(
-      'OXEN Full Balance',
-      name: 'oxen_full_balance',
+      'LOZAXX Full Balance',
+      name: 'lozzax_full_balance',
       desc: '',
       args: [],
     );
@@ -625,11 +625,11 @@ class S {
     );
   }
 
-  /// `Send OXEN`
-  String get send_oxen {
+  /// `Send LOZAXX`
+  String get send_lozzax {
     return Intl.message(
-      'Send OXEN',
-      name: 'send_oxen',
+      'Send LOZAXX',
+      name: 'send_lozzax',
       desc: '',
       args: [],
     );
@@ -945,10 +945,10 @@ class S {
     );
   }
 
-  /// `You can restore the whole Oxen Wallet app from your back-up file`
+  /// `You can restore the whole Lozzax Wallet app from your back-up file`
   String get restore_description_from_backup {
     return Intl.message(
-      'You can restore the whole Oxen Wallet app from your back-up file',
+      'You can restore the whole Lozzax Wallet app from your back-up file',
       name: 'restore_description_from_backup',
       desc: '',
       args: [],
@@ -1215,10 +1215,10 @@ class S {
     );
   }
 
-  /// `Send Oxen`
+  /// `Send Lozzax`
   String get send_title {
     return Intl.message(
-      'Send Oxen',
+      'Send Lozzax',
       name: 'send_title',
       desc: '',
       args: [],
@@ -1235,11 +1235,11 @@ class S {
     );
   }
 
-  /// `Oxen address`
-  String get send_oxen_address {
+  /// `Lozzax address`
+  String get send_lozzax_address {
     return Intl.message(
-      'Oxen address',
-      name: 'send_oxen_address',
+      'Lozzax address',
+      name: 'send_lozzax_address',
       desc: '',
       args: [],
     );
@@ -1365,11 +1365,11 @@ class S {
     );
   }
 
-  /// `Stake Oxen`
-  String get stake_oxen {
+  /// `Stake Lozzax`
+  String get stake_lozzax {
     return Intl.message(
-      'Stake Oxen',
-      name: 'stake_oxen',
+      'Stake Lozzax',
+      name: 'stake_lozzax',
       desc: '',
       args: [],
     );
@@ -1875,10 +1875,10 @@ class S {
     );
   }
 
-  /// `Oxen Wallet`
+  /// `Lozzax Wallet`
   String get wallet_list_title {
     return Intl.message(
-      'Oxen Wallet',
+      'Lozzax Wallet',
       name: 'wallet_list_title',
       desc: '',
       args: [],
@@ -2075,11 +2075,11 @@ class S {
     );
   }
 
-  /// `OXEN value can't exceed available balance.\nThe number of fraction digits must be less or equal to 12`
-  String get error_text_oxen {
+  /// `LOZAXX value can't exceed available balance.\nThe number of fraction digits must be less or equal to 12`
+  String get error_text_lozzax {
     return Intl.message(
-      'OXEN value can\'t exceed available balance.\nThe number of fraction digits must be less or equal to 12',
-      name: 'error_text_oxen',
+      'LOZAXX value can\'t exceed available balance.\nThe number of fraction digits must be less or equal to 12',
+      name: 'error_text_lozzax',
       desc: '',
       args: [],
     );
@@ -2405,10 +2405,10 @@ class S {
     );
   }
 
-  /// `OXEN Recipient Detected`
+  /// `LOZAXX Recipient Detected`
   String get openalias_alert_title {
     return Intl.message(
-      'OXEN Recipient Detected',
+      'LOZAXX Recipient Detected',
       name: 'openalias_alert_title',
       desc: '',
       args: [],
@@ -2445,20 +2445,20 @@ class S {
     );
   }
 
-  /// `NEVER give your Oxen wallet {item} to ANYONE!`
+  /// `NEVER give your Lozzax wallet {item} to ANYONE!`
   String never_give_your(Object item) {
     return Intl.message(
-      'NEVER give your Oxen wallet $item to ANYONE!',
+      'NEVER give your Lozzax wallet $item to ANYONE!',
       name: 'never_give_your',
       desc: '',
       args: [item],
     );
   }
 
-  /// `NEVER input your Oxen wallet {item} into any software or website other than the OFFICIAL Oxen wallets downloaded directly from the {app_store}, the Oxen website, or the Oxen GitHub.\nAre you sure you want to access your wallet {item}?`
+  /// `NEVER input your Lozzax wallet {item} into any software or website other than the OFFICIAL Lozzax wallets downloaded directly from the {app_store}, the Lozzax website, or the Lozzax GitHub.\nAre you sure you want to access your wallet {item}?`
   String dangerzone_warning(Object item, Object app_store) {
     return Intl.message(
-      'NEVER input your Oxen wallet $item into any software or website other than the OFFICIAL Oxen wallets downloaded directly from the $app_store, the Oxen website, or the Oxen GitHub.\nAre you sure you want to access your wallet $item?',
+      'NEVER input your Lozzax wallet $item into any software or website other than the OFFICIAL Lozzax wallets downloaded directly from the $app_store, the Lozzax website, or the Lozzax GitHub.\nAre you sure you want to access your wallet $item?',
       name: 'dangerzone_warning',
       desc: '',
       args: [item, app_store],

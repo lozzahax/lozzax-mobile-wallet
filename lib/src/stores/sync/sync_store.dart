@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:mobx/mobx.dart';
-import 'package:oxen_wallet/src/node/sync_status.dart';
-import 'package:oxen_wallet/src/wallet/wallet.dart';
-import 'package:oxen_wallet/src/domain/services/wallet_service.dart';
+import 'package:lozzax_wallet/src/node/sync_status.dart';
+import 'package:lozzax_wallet/src/wallet/wallet.dart';
+import 'package:lozzax_wallet/src/domain/services/wallet_service.dart';
 
 part 'sync_store.g.dart';
 

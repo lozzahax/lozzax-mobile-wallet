@@ -1,4 +1,4 @@
-package io.oxen.coin
+package io.lozzax.coin
 
 import java.nio.ByteBuffer
 
@@ -17,22 +17,22 @@ import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
 
-class OxenCoinPlugin : FlutterPlugin, MethodCallHandler {
+class LozzaxCoinPlugin : FlutterPlugin, MethodCallHandler {
     private lateinit var channel : MethodChannel
 
     companion object {
-        // val oxenApi = OxenApi()
+        // val lozzaxApi = LozzaxApi()
         val main = Handler(Looper.getMainLooper())
 
         @JvmStatic
         fun registerWith(registrar: Registrar) {
-            val channel = MethodChannel(registrar.messenger(), "oxen_coin")
-            channel.setMethodCallHandler(OxenCoinPlugin())
+            val channel = MethodChannel(registrar.messenger(), "lozzax_coin")
+            channel.setMethodCallHandler(LozzaxCoinPlugin())
         }
     }
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "oxen_coin")
+        channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "lozzax_coin")
         channel.setMethodCallHandler(this)
     }
 
@@ -41,6 +41,6 @@ class OxenCoinPlugin : FlutterPlugin, MethodCallHandler {
     }
 
     override fun onMethodCall(call: MethodCall, result: Result) {
-        // oxenApi.load()
+        // lozzaxApi.load()
     }
 }
